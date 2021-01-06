@@ -109,6 +109,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
 
 # bat scroll support
 export BAT_PAGER="less -RF"
