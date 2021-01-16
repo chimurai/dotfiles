@@ -1,0 +1,11 @@
+{{/* boolean feature tags */}}
+{{- $personal_device := false -}}{{/* true if this machine should have personal setup */}}
+{{- $work_device := false -}}{{/* true if this machine should have work setup */}}
+{{- "" -}}
+
+{{- $personal_device = promptBool "personal_device" -}}
+{{- $work_device = promptBool "work_device" -}}
+
+[data]
+  personal_device = {{ $personal_device }}
+  work_device = {{ $work_device }}
