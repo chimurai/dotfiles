@@ -1,0 +1,48 @@
+{{- if (eq .chezmoi.os "darwin") -}}
+#!/bin/bash
+
+set -eufo pipefail
+
+formulae=(
+	autojump
+	bat
+	curl
+	deno
+	fzf
+	git
+	jq
+	nvm
+	tldr
+	wget
+	yarn
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
+casks=(
+	aerial
+	clipy
+	google-chrome
+	kap
+	iterm2
+	visual-studio-code
+)
+
+{{ if .work_device }}
+	formulae+=(
+		mitmproxy
+		TomAnthony/brews/itermocil
+		x3270
+		zeplin
+	)
+	casks+=(
+		beyond-compare
+		bluejeans
+		docker
+		microsoft-teams
+		slack
+	)
+{{ end }}
+
+brew install ${formulae[@]}
+brew install --cask ${casks[@]}
+{{ end }}
