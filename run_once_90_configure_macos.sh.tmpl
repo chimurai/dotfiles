@@ -1,0 +1,17 @@
+{{ if (eq .chezmoi.os "darwin") -}}
+#!/bin/bash
+
+set -eufo pipefail
+
+# ~/.macos — https://mths.be/macos
+
+# Keyboard
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Trackpad
+defaults write NSGlobalDomain com.apple.trackpad.forceClick -int 1
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+
+{{ end -}}
