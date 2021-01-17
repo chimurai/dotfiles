@@ -1,0 +1,11 @@
+# Wait 60 seconds before timing out. This applies to all timeouts: DNS, connect and read. (The default read timeout is 15 minutes!)
+timeout = 60
+
+# Retry a few times when a download fails, but don’t overdo it. (The default is 20!)
+tries = 3
+
+# Disguise as Edge on Windows 10
+user_agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582
+
+# Add a `.html` extension to `text/html` or `application/xhtml+xml` files that lack one, or a `.css` extension to `text/css` files that lack one
+adjust_extension = on
