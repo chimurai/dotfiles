@@ -28,6 +28,16 @@ defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 
 #################################################
+# Terminal                                      #
+#################################################
+
+# General / New window with Pro profile:
+defaults write com.apple.Terminal "Startup Window Settings" -string Pro
+
+# Profile: default Pro profile:
+defaults write com.apple.Terminal "Default Window Settings" -string Pro
+
+#################################################
 # iTerm2                                        #
 #################################################
 
