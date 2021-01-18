@@ -46,6 +46,10 @@ defaults write com.googlecode.iterm2 AlternateMouseScroll -int 1
 # Profiles/Text: Enable Blinking Cursor
 /usr/libexec/PlistBuddy -c "set 'New Bookmarks':0:'Blinking Cursor' 1" ~/Library/Preferences/com.googlecode.iterm2.plist
 
+# Profile/Colors: Monokai Remastered Theme
+defaults read com.googlecode.iterm2 | grep -q "Monokai Remastered" ||
+  (curl -Ls https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Monokai%20Remastered.itermcolors > /tmp/"Monokai Remastered.itermcolors" && open /tmp/"Monokai Remastered.itermcolors")
+
 {{ end -}}
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
