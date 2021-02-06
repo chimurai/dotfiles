@@ -11,4 +11,7 @@ zplug "junegunn/fzf", use:"shell/*.zsh", defer:2
 zplug "zdharma/fast-syntax-highlighting", as:plugin, defer:2
 zplug "zsh-users/zsh-autosuggestions", as:plugin, defer:2
 
+zplug "mafredri/zsh-async", from:github
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+
 zplug load

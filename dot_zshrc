@@ -7,7 +7,8 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="simple"
+# Disable oh-my-zsh themes for pure-prompt (https://github.com/sindresorhus/pure)
+ZSH_THEME=""
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -54,6 +55,8 @@ DISABLE_AUTO_TITLE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+source $ZSH/oh-my-zsh.sh
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -63,8 +66,6 @@ DISABLE_AUTO_TITLE="true"
 # load plugins
 [ -f ~/.zplug.sh ] && source ~/.zplug.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
