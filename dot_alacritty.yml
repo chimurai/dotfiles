@@ -4,8 +4,18 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-   x: 5
-   y: 5
+   x: 10
+   y: 25
+
+  # Window decorations
+  # Available values:
+  # - `full`: Window with title bar and title bar buttons
+  # - `none`: Window without title bar, rounded corners, or drop shadow
+  # - `transparent`: Window with title bar with transparent background and title
+  #   bar buttons
+  # - `buttonless`: Window with title bar with transparent background and no
+  #   title bar buttons
+  decorations: transparent
 
 
 # Font configuration (changes require restart)
@@ -13,35 +23,41 @@ font:
   # Point size
   size: 13.0
 
+# Colors (Snazzy) https://github.com/alebelcor/alacritty-snazzy/blob/master/snazzy.yml
+draw_bold_text_with_bright_colors: true
 
-# Colors (Monokai Soda)
 colors:
-  # Default colors
+
   primary:
-    background: '#1a1a1a'
-    foreground: '#c4c5b5'
+    background: '#282a36'
+    foreground: '#eff0eb'
 
-  # Normal colors
+  cursor:
+    cursor: '#97979b'
+
+  selection:
+    text:       '#282a36'
+    background: '#feffff'
+
   normal:
-    black:   '#1a1a1a'
-    red:     '#f4005f'
-    green:   '#98e024'
-    yellow:  '#fa8419'
-    blue:    '#9d65ff'
-    magenta: '#f4005f'
-    cyan:    '#58d1eb'
-    white:   '#c4c5b5'
+    black:   '#282a36'
+    red:     '#ff5c57'
+    green:   '#5af78e'
+    yellow:  '#f3f99d'
+    blue:    '#57c7ff'
+    magenta: '#ff6ac1'
+    cyan:    '#9aedfe'
+    white:   '#f1f1f0'
 
-  # Bright colors
   bright:
-    black:   '#625e4c'
-    red:     '#f4005f'
-    green:   '#98e024'
-    yellow:  '#e0d561'
-    blue:    '#9d65ff'
-    magenta: '#f4005f'
-    cyan:    '#58d1eb'
-    white:   '#f6f6ef'
+    black:   '#686868'
+    red:     '#ff5c57'
+    green:   '#5af78e'
+    yellow:  '#f3f99d'
+    blue:    '#57c7ff'
+    magenta: '#ff6ac1'
+    cyan:    '#9aedfe'
+    white:   '#eff0eb'
 
 
 key_bindings:
