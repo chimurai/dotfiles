@@ -22,4 +22,5 @@ else
   # chezmoi init https://github.com/chimurai/dotfiles.git
 fi
 
-echo "\nDone."
+echo ""
+echo "Done."
