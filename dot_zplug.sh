@@ -13,7 +13,7 @@ zplug "zsh-users/zsh-autosuggestions", as:plugin, defer:2
 zplug 'zsh-users/zsh-completions', depth:1 # more completions
 
 zplug "mafredri/zsh-async", from:github
-zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "sindresorhus/pure", use:pure.zsh, from:github, at:main, as:theme
 
 zplug load
 
