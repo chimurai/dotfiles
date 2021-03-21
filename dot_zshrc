@@ -1,5 +1,16 @@
 export LANG=en_US.UTF-8
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+# zsh options: http://zsh.sourceforge.net/Doc/Release/Options.html
+setopt APPEND_HISTORY # adds history
+setopt HIST_IGNORE_ALL_DUPS # If a new command line being added to the history list duplicates an older one, the older command is removed from the list
+setopt HIST_IGNORE_SPACE # No history when starting command with space
+setopt HIST_SAVE_NO_DUPS # When writing out the history file, older commands that duplicate newer ones are omitted
+setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -101,9 +112,6 @@ source $ZSH/oh-my-zsh.sh
 # key bindings
 bindkey '[C' forward-word   # alt+left
 bindkey '[D' backward-word  # alt+right
-
-# No history when starting command with space
-export HISTCONTROL=ignorespace
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
