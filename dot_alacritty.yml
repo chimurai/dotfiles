@@ -17,6 +17,10 @@ window:
   #   title bar buttons
   decorations: transparent
 
+cursor:
+  style:
+    blinking: Always
+  blink_interval: 500
 
 # Font configuration (changes require restart)
 font:
