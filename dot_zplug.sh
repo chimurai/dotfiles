@@ -1,4 +1,6 @@
-export ZPLUG_HOME=/usr/local/opt/zplug
+[ -d /usr/local/opt/zplug ] && export ZPLUG_HOME=/usr/local/opt/zplug
+[ -d /opt/homebrew/opt/zplug ] && export ZPLUG_HOME=/opt/homebrew/opt/zplug
+
 source $ZPLUG_HOME/init.zsh
 
 zplug "plugins/nvm", from:oh-my-zsh
