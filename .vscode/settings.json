@@ -3,5 +3,6 @@
         "*.toml.tmpl": "ini",
         "*.sh.tmpl": "shellscript",
         "dot_*rc": "shellscript",
+        "dot_zsh_plugins.txt": "shellscript",
     }
 }

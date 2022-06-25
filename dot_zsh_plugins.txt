@@ -1,0 +1,11 @@
+##############################
+#    antidote zsh plugins    #
+##############################
+
+bigH/git-fuzzy path:bin kind:path
+
+mafredri/zsh-async
+sindresorhus/pure
+
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
