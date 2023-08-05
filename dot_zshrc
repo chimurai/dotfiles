@@ -1,3 +1,6 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -116,3 +119,6 @@ bindkey '[D' backward-word  # alt+right
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
