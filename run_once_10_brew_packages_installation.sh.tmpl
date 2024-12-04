@@ -24,7 +24,6 @@ formulae=(
 casks=(
 	aerial
 	clipy
-	fig
 	google-chrome
 	kap
 	iterm2
@@ -34,22 +33,16 @@ casks=(
 {{ if .work_device }}
 	formulae+=(
 		docker
-		exa
 		go
-		go-jira
 		mitmproxy
 		rancher
 		TomAnthony/brews/itermocil
-		x3270
 	)
 	casks+=(
 		beyond-compare
-		bluejeans
 		hex-fiend
 		microsoft-teams
 		p4v
-		postman
-		slack
 		stats
 	)
 {{ end }}
