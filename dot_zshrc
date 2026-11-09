@@ -114,5 +114,4 @@ bindkey '[C' forward-word   # alt+left
 bindkey '[D' backward-word  # alt+right
 
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
